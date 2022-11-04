@@ -10,14 +10,18 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
+		"@panva/hkdf": "^1.0.2",
+		"@sveltejs/adapter-node": "1.0.0-next.96",
+		"@sveltejs/kit": "1.0.0-next.522",
 		"@sveltejs/package": "next",
+		"@types/uuid": "^8.3.4",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"jose": "^4.10.0",
+		"openid-client": "^5.1.10",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "^3.44.0",
@@ -25,6 +29,7 @@
 		"svelte-preprocess": "^4.10.6",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
+		"uuid": "^9.0.0",
 		"vite": "^3.1.0"
 	},
 	"type": "module"
