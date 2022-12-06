@@ -5,7 +5,7 @@ export const { GET } = RouteHandler({
 	issuer: AUTH_ISSUER,
 	clientId: AUTH_CLIENT_ID,
 	clientSecret: AUTH_CLIENT_SECRET,
-	redirectUri: 'http://localhost:5173/auth/callback',
+	redirectUri: 'http://127.0.0.1:5173/auth/callback',
 	cookieSecret: 'very-secret',
-	scope: 'openid offline_access profile'
+	scope: 'openid offline_access profile email'
 });
