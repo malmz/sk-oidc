@@ -1,4 +1,4 @@
-import type { Handle, RequestHandler } from '@sveltejs/kit';
+import { error, type Handle, type RequestHandler } from '@sveltejs/kit';
 import type { AuthConfig } from './types.js';
 import * as actions from './actions.js';
 
@@ -30,3 +30,16 @@ export const callback =
 	(config: AuthConfig): RequestHandler =>
 	({ cookies, url }) =>
 		actions.callback(config, cookies, url);
+
+export const routeHandler =
+	(config: AuthConfig): RequestHandler =>
+	async ({ params, cookies, url }) => {
+		switch (params.action) {
+			case 'signin':
+				return actions.signin(config, cookies, url);
+			case 'callback':
+				return actions.callback(config, cookies, url);
+			default:
+				throw error(404, 'Action not found');
+		}
+	};
