@@ -1,6 +1,26 @@
 {
-	"name": "sk-oidc",
-	"version": "0.0.1",
+	"name": "@malmz/sk-oidc",
+	"version": "0.1.0",
+	"description": "SvelteKit OIDC client",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Malmz/sk-oidc.git"
+	},
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"oidc",
+		"oauth",
+		"openid"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/Malmz/sk-oidc",
+	"bugs": "https://github.com/Malmz/sk-oidc/issues",
+	"author": {
+		"email": "cral@codegrotto.com",
+		"name": "Carl Malmgren",
+		"url": "https://codegrotto.com"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -24,7 +44,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"svelte": "^3.54.0"
+		"svelte": "^3.59.1"
 	},
 	"devDependencies": {
 		"@panva/hkdf": "^1.1.1",
